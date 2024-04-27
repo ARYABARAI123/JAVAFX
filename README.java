@@ -1,11 +1,14 @@
-# Java_Assignment_8_10
+he Java assignment involves creating an application that extends javafx.application.Application and includes a main() method to launch the JavaFX application. It implements the start() method to configure the JavaFX stage.
 
-**Assignment Class:**
-- Extends `javafx.application.Application`.
-- Contains the `main()` method to launch the JavaFX application.
-- Implements the `start()` method to set up the JavaFX stage.
-- Defines UI components including text fields (`employeeIDField`, `nameField`, `ageField`, `emailField`, `departmentField`) and buttons (`createTableButton`, `deleteTableButton`, `registerButton`, `viewEmployeesButton`, `updateButton`).
-- Binds actions to buttons using lambda expressions to execute corresponding methods.
-- Implements methods to interact with a MySQL database: `createEmployeeTable()`, `deleteEmployeeTable()`, `registerEmployee()`, `viewEmployees()`, `updateEmployeeInfo()`.
-- Utilizes JDBC for database connectivity and SQL queries to perform database operations.
-- Displays error messages in case of exceptions or invalid operations.
+Within the application, UI components such as text fields (employeeIDField, nameField, ageField, emailField, departmentField) and buttons (createTableButton, deleteTableButton, registerButton, viewEmployeesButton, updateButton) are defined. Actions are bound to these buttons using lambda expressions to trigger corresponding methods.
+
+The application interacts with a MySQL database using JDBC for connectivity and executes SQL queries for various operations:
+
+createEmployeeTable(): Method to create a table for storing employee records in the database.
+deleteEmployeeTable(): Method to delete the employee table from the database.
+registerEmployee(): Method to insert new employee information into the database.
+viewEmployees(): Method to retrieve and display all employees' information from the database.
+updateEmployeeInfo(): Method to update employee information in the database.
+Additionally, the application handles exceptions and displays appropriate error messages for invalid operations or database connectivity issues.
+
+Overall, this assignment involves developing a JavaFX application with a GUI that enables CRUD (Create, Read, Update, Delete) operations on an employee database using MySQL and JDBC.
